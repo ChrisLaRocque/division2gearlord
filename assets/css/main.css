@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: black;
+  color: white;
+}
+
+hr {
+  border: 2px solid white;
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+}
+
+i.slot-logo {
+  position: absolute;
+  right: 12%;
+}
+
+i.gear-armor::before {
+  font-size: 1.5vh;
+}
+
+ul.attribute-list {
+  list-style: inside;
+}
+
+.item-container, .weapon-container {
+  border: 2px solid white;
+}
+
+.selector-container {
+  min-height: 20vh;
+}
+
+#dropdownMenuButton {
+  width: 100%;
+  margin: 2vh 0;
+}
+
+.item-container h2 {
+  margin: 1vh 0;
+}
+/*# sourceMappingURL=main.css.map */

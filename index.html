@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Division 2</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="assets/css/flaticon/weapons/flaticon.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+</head>
+<body>
+
+  <section id="weapons">
+    <div class="container-fluid weapons-container">
+      
+      <div class="row weapons-header">
+        <div class="col-12">
+          <h1>Weapons</h1>
+        </div>
+      </div>
+
+      <!-- Static Loadout -->
+      <div class="row weapons-row">
+        <div class="col-xl-9 col-12">
+          <div class="row">
+            <div class="col-xl-4 col-12 weapon-container">
+              <h2 class="">Primary Weapon</h2>
+              <hr>
+              <div class="primary-weapon"></div>
+            </div>
+            <div class="col-xl-4 col-12 weapon-container">
+              <h2>Secondary Weapon</h2>
+              <hr>
+              <div class="secondary-weapon"></div>
+            </div>
+            <div class="col-xl-4 col-12 weapon-container">
+              <h2>Sidearm</h2>
+              <hr>
+              <div class="sidearm"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-12">
+          <div class="row">
+            <div class="col-12 weapon-container">
+              <h2>Signature Weapon</h2>
+              <hr>
+              <div class="signature-weapon"></div>
+            </div>
+            <div class="col-12 weapon-container grenade-container">
+              <h2>Grenade</h2>
+              <hr>
+              <div class="grenade"></div>
+          </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row weapons-row">
+        
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Dynamic Gear -->
+  <section id="dynamic-gear">
+    <div class="container-fluid gear-container">
+  
+      <div class="row gear-header">
+        <div class="col-12">
+          <h1>Gear</h1>
+        </div>
+      </div>
+  
+      <div class="row gear-row">
+        <div class="col-xl-2 col-12 item-container mask">
+          <h2 class="">Mask<i class="flaticon-gas-mask slot-logo"></i></h2>
+          <hr>
+          <div class="dynamic-mask-container"></div>
+          <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Brand
+            </button>
+            <div class="dropdown-menu mask-brand-dropdown-menu" aria-labelledby="dropdownMenuButton"></div>
+          </div>
+        </div>
+        <div class="col-xl-2 col-12 item-container backpack">
+          <h2>Backpack<i class="flaticon-backpack slot-logo"></i></h2>
+          <hr>
+          <div class="dynamic-backpack-container"></div>
+          <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Brand
+            </button>
+            <div class="dropdown-menu backpack-brand-dropdown-menu" aria-labelledby="dropdownMenuButton"></div>
+          </div>
+        </div>
+        <div class="col-xl-2 col-12 item-container vest">
+          <h2>Vest<i class="flaticon-bulletproof-vest slot-logo"></i></h2>
+          <hr>
+          <div class="vest-container"></div>
+        </div>
+        <div class="col-xl-2 col-12 item-container gloves">
+          <h2>Gloves</h2>
+          <hr>
+          <div class="gloves-container"></div>
+        </div>
+        <div class="col-xl-2 col-12 item-container holster">
+          <h2>Holster</h2>
+          <hr>
+          <div class="holster-container"></div>
+        </div>
+        <div class="col-xl-2 col-12 item-container knee-pads">
+          <h2>Knee Pads</h2>
+          <hr>
+          <div class="kneepads-container"></div>
+        </div>
+      </div>
+  
+    </div>
+  </section>
+
+  <!-- Gear with selectors-->
+<section style="display:none;" id="gear-testing">
+  <div class="container-fluid gear-container">
+
+    <div class="row gear-header">
+      <div class="col-12">
+        <h1>Gear</h1>
+      </div>
+    </div>
+
+    <div class="row gear-row">
+      <div class="col-xl-2 col-12 item-container mask">
+        <h2 class="">Mask<i class="flaticon-gas-mask slot-logo"></i></h2>
+        <hr>
+        <div class="selector-container">
+          <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Brand
+            </button>
+            <div class="dropdown-menu mask-brand-dropdown-menu" aria-labelledby="dropdownMenuButton"></div>
+          </div>
+          <!-- <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Model
+            </button>
+            <div class="dropdown-menu mask-model-dropdown-menu" aria-labelledby="dropdownMenuButton"></div>
+          </div> -->
+          <!-- <select id="maskBrandSelector" class="selector gear-selector brand-selector"></select>
+          <select id="maskModelSelector" class="selector gear-selector"></select> -->
+        </div>
+      </div>
+      <div class="col-xl-2 col-12 item-container backpack">
+        <h2>Backpack<i class="flaticon-backpack slot-logo"></i></h2>
+        <hr>
+        <div class="mask-display-container"></div>
+        <div class="selector-container">
+          <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Brand
+            </button>
+            <div class="dropdown-menu backpack-brand-dropdown-menu" aria-labelledby="dropdownMenuButton"></div>
+          </div>
+          <!-- <select id="backpackBrandSelector" class="selector gear-selector brand-selector"></select>
+          <select id="backpackModelSelector" class="selector gear-selector"></select> -->
+        </div>
+      </div>
+      <div class="col-xl-2 col-12 item-container vest">
+        <h2>Vest<i class="flaticon-bulletproof-vest slot-logo"></i></h2>
+        <hr>
+      <div class="selector-container">
+        <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Brand
+          </button>
+          <div class="dropdown-menu vest-brand-dropdown-menu" aria-labelledby="dropdownMenuButton"></div>
+        </div>
+        <!-- <select id="vestBrandSelector" class="selector gear-selector brand-selector"></select>
+        <select id="vestModelSelector" class="selector gear-selector"></select> -->
+      </div>
+      </div>
+      <div class="col-xl-2 col-12 item-container gloves">
+        <h2>Gloves</h2>
+        <hr>
+        <div class="selector-container">
+          <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Brand
+            </button>
+            <div class="dropdown-menu gloves-brand-dropdown-menu" aria-labelledby="dropdownMenuButton"></div>
+          </div>
+          <!-- <select id="glovesBrandSelector" class="selector gear-selector brand-selector"></select>
+          <select id="glovesModelSelector" class="selector gear-selector"></select> -->
+        </div>
+      </div>
+      <div class="col-xl-2 col-12 item-container holster">
+        <h2>Holster</h2>
+        <hr>
+        <div class="selector-container">
+          <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Brand
+            </button>
+            <div class="dropdown-menu holster-brand-dropdown-menu" aria-labelledby="dropdownMenuButton"></div>
+          </div>
+          <!-- <select id="holsterBrandSelector" class="selector gear-selector brand-selector"></select>
+          <select id="holsterModelSelector" class="selector gear-selector"></select> -->
+        </div>
+      </div>
+      <div class="col-xl-2 col-12 item-container knee-pads">
+        <h2>Knee Pads</h2>
+        <hr>
+        <div class="selector-container">
+          <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Brand
+            </button>
+            <div class="dropdown-menu kneepads-brand-dropdown-menu" aria-labelledby="dropdownMenuButton"></div>
+          </div>
+          <!-- <select id="kneepadsBrandSelector" class="selector gear-selector brand-selector"></select>
+          <select id="kneepadsModelSelector" class="selector gear-selector"></select> -->
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+  <!-- Static Gear -->
+  <section id="gear">
+    <div class="container-fluid gear-container">
+
+      <div class="row gear-header">
+        <div class="col-12">
+          <h1>Gear</h1>
+        </div>
+      </div>
+
+      <div class="row gear-row">
+        <div class="col-xl-2 col-12 item-container mask">
+          <h2 class="">Mask<i class="flaticon-gas-mask slot-logo"></i></h2>
+          <hr>
+          <div class="mask-container"></div>
+        </div>
+        <div class="col-xl-2 col-12 item-container backpack">
+          <h2>Backpack<i class="flaticon-backpack slot-logo"></i></h2>
+          <hr>
+          <div class="backpack-container"></div>
+        </div>
+        <div class="col-xl-2 col-12 item-container vest">
+          <h2>Vest<i class="flaticon-bulletproof-vest slot-logo"></i></h2>
+          <hr>
+          <div class="vest-container"></div>
+        </div>
+        <div class="col-xl-2 col-12 item-container gloves">
+          <h2>Gloves</h2>
+          <hr>
+          <div class="gloves-container"></div>
+        </div>
+        <div class="col-xl-2 col-12 item-container holster">
+          <h2>Holster</h2>
+          <hr>
+          <div class="holster-container"></div>
+        </div>
+        <div class="col-xl-2 col-12 item-container knee-pads">
+          <h2>Knee Pads</h2>
+          <hr>
+          <div class="kneepads-container"></div>
+        </div>
+      </div>
+
+     </div>
+  </section>
+
+  <section>
+    <div class="container-fluid stats-container">
+
+      <div class="row stats-header">
+        <div class="col-12">
+          <h1>Stats</h1>
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="col-xl-4 col-12 weapon-stats-container">
+          <div class="row">
+            <div class="col-12">
+              <h2>Weapon Stats</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-10">Weapon Damage: </div>
+            <div class="col-2">1,500,000</div>
+          </div>
+          <div class="row">
+            <div class="col-10">PVP Weapon Damage: </div>
+            <div class="col-2">69</div>
+          </div>
+          <div class="row">
+            <div class="col-10">Critical Hit Chance:</div>
+            <div class="col-2"></div>
+          </div>
+          <div class="row">
+            <div class="col-10">Critical Hit Damage:</div>
+            <div class="col-2"></div>
+          </div>
+          <div class="row">
+            <div class="col-10">Headshot Damage:</div>
+            <div class="col-2"></div>
+          </div>
+          <div class="row">
+            <div class="col-10">Damage to Armor:</div>
+            <div class="col-2"></div>
+          </div>
+          <div class="row">
+            <div class="col-10">Damage to Health:</div>
+            <div class="col-2"></div>
+          </div>
+          <div class="row">
+            <div class="col-10">Range:</div>
+            <div class="col-2"></div>
+          </div>
+          <div class="row">
+            <div class="col-10">Reload Time:</div>
+            <div class="col-2"></div>
+          </div>
+          <div class="row">
+            <div class="col-10">Reload Speed Bonus:</div>
+            <div class="col-2"></div>
+          </div>
+          <div class="row">
+            <div class="col-10">Accuracy:</div>
+            <div class="col-2"></div>
+          </div>
+          <div class="row">
+            <div class="col-10">Stability:</div>
+            <div class="col-2"></div>
+          </div>
+          <div class="row">
+            <div class="col-10">Weapon Swap Speed:</div>
+            <div class="col-2"></div>
+          </div>
+          <div class="row">
+            <div class="col-10">Weapon Handling:</div>
+            <div class="col-2"></div>
+          </div>
+          <div class="row">
+            <div class="col-10">Ammo Capacity:</div>
+            <div class="col-2"></div>
+          </div>
+        </div>
+        <div class="col-xl-4 col-12 offense-stats-container">
+          <div class="row">
+            <div class="col-12">
+              <h2>Offense Stats</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-10">All Weapons Damage Bonus: </div>
+            <div class="col-2">69</div>
+          </div>
+          <div class="row">
+            <div class="col-10">Marksman Rifle Damage Bonus: </div>
+            <div class="col-2">69</div>
+          </div>
+          <div class="row">
+            <div class="col-10">Rifle Damage Bonus:</div>
+            <div class="col-2"></div>
+          </div>
+          <div class="row">
+            <div class="col-10">Assault Rifle Damage Bonus:</div>
+            <div class="col-2"></div>
+          </div>
+          <div class="row">
+            <div class="col-10">Light Machine Gun Damage Bonus:</div>
+            <div class="col-2"></div>
+          </div>
+          <div class="row">
+            <div class="col-10">Sub Machine Gun Damage Bonus:</div>
+            <div class="col-2"></div>
+          </div>
+          <div class="row">
+            <div class="col-10">Shotgun Damage Bonus:</div>
+            <div class="col-2"></div>
+          </div>
+          <div class="row">
+            <div class="col-10">Pistol Damage Bonus:</div>
+            <div class="col-2"></div>
+          </div>
+          <div class="row">
+            <div class="col-10">Explosive Damage:</div>
+            <div class="col-2"></div>
+          </div>
+        </div>
+        <div class="col-xl-4 col-12 defense-stats-container">
+          <div class="row">
+            <div class="col-12">
+              <h2>Defense Stats</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-10">Armor: </div>
+            <div class="col-2">69</div>
+          </div>
+          <div class="row">
+            <div class="col-10">Armor on Kill: </div>
+            <div class="col-2">69</div>
+          </div>
+          <div class="row">
+            <div class="col-10">Armor Regeneration:</div>
+            <div class="col-2"></div>
+          </div>
+          <div class="row">
+            <div class="col-10">Max Health:</div>
+            <div class="col-2"></div>
+          </div>
+          <div class="row">
+            <div class="col-10">Health on Kill:</div>
+            <div class="col-2"></div>
+          </div>
+          <div class="row">
+            <div class="col-10">Health Regeneration:</div>
+            <div class="col-2"></div>
+          </div>
+          <div class="row">
+            <div class="col-10">Incoming Repairs:</div>
+            <div class="col-2"></div>
+          </div>
+          <div class="row">
+            <div class="col-10">Protection From Elites:</div>
+            <div class="col-2"></div>
+          </div>
+          <div class="row">
+            <div class="col-10">Pulse Resistance:</div>
+            <div class="col-2"></div>
+          </div>
+          <div class="row">
+            <div class="col-10">Explosive Resistance:</div>
+            <div class="col-2"></div>
+          </div>
+          <div class="row">
+            <div class="col-10">Hazard Protection:</div>
+            <div class="col-2"></div>
+          </div>
+          <div class="row">
+            <div class="col-10">Bleed Resistance:</div>
+            <div class="col-2"></div>
+          </div>
+          <div class="row">
+            <div class="col-10">Blind/Deaf Resistance:</div>
+            <div class="col-2"></div>
+          </div>
+          <div class="row">
+            <div class="col-10">Burn Protection:</div>
+            <div class="col-2"></div>
+          </div>
+          <div class="row">
+            <div class="col-10">Confuse Resistance:</div>
+            <div class="col-2"></div>
+          </div>
+          <div class="row">
+            <div class="col-10">Disrupt Resistance:</div>
+            <div class="col-2"></div>
+          </div>
+          <div class="row">
+            <div class="col-10">Ensnare Protection:</div>
+            <div class="col-2"></div>
+          </div>
+          <div class="row">
+            <div class="col-10">Poison Resistance:</div>
+            <div class="col-2"></div>
+          </div>
+          <div class="row">
+            <div class="col-10">Shock Resistance:</div>
+            <div class="col-2"></div>
+          </div>
+        </div>   
+      </div>
+
+    </div>
+  </section>
+  <footer>
+    <div class="icon-attribution">Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a
+      href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a></div>
+  </footer>
+  
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  
+  <script src="/assets/js/gear.js"></script>
+  <script src="/assets/js/weapons.js"></script>
+  <script src="/assets/js/constructors.js"></script>
+  <script src="/assets/js/data.js"></script>
+  <script src="/assets/js/brands.js"></script>
+  <script src="/assets/js/templates.js"></script>
+  <script src="/assets/js/placeholderloadout.js"></script>
+  <script src="/assets/js/main.js"></script>
+  <script src="/assets/js/gearselector.js"></script>
+
+</body>
+</html>
