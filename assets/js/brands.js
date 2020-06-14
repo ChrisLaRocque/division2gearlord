@@ -128,9 +128,21 @@ var brands = {
     bonuses: [brandBonuses.health, brandBonuses.extraIncomingHealing, brandBonuses.hazardProtection],
     mask: "",
     backpack: {
-      allHazardsNitroBackpack: { name: "All Hazards Nitro Backpack" },
-      allHazardsPrimeBackpack: { name: "All Hazards Nitro Backpack" },
-      amp24: { name: "AMP 24" },
+      allHazardsNitroBackpack: { 
+        id: "allHazardsNitroBackpack",
+        name: "All Hazards Nitro Backpack",
+        named: false
+       },
+      allHazardsPrimeBackpack: { 
+        id: "allHazardsPrimeBackpack",
+        name: "All Hazards Prime Backpack",
+        named: false
+       },
+      amp24: { 
+        id: "amp24",
+        name: "AMP 24",
+        named: false
+       },
       rush12Backpack: { name: "RUSH12 Backpack" },
       rush24Backpack: { name: "RUSH24 Backpack" },
       rush72Backpack: { name: "RUSH72 Backpack" }
@@ -138,7 +150,9 @@ var brands = {
     vest: "",
     gloves: {
       stationGripGloves: {
-        name: "Station Grip Gloves"
+        id: "stationGripGloves",
+        name: "Station Grip Gloves",
+        named: false
       }
     },
     holster: "",
@@ -150,7 +164,11 @@ var brands = {
     bonuses: [],
     mask: "",
     backpack: {
-    zibaLowProfilePack: { name: "Ziba Low Profile Pack" }
+    zibaLowProfilePack: { 
+      id: "zibaLowProfilePack",
+      name: "Ziba Low Profile Pack",
+      named: false
+     }
     },
     vest: "",
     gloves: "",
@@ -163,15 +181,25 @@ var brands = {
     bonuses: [brandBonuses.marksmanRifleDamage, brandBonuses.headshotDamage, brandBonuses.damagetoArmor],
     mask: "",
     backpack: {
-      apolloOperatorPack: { name: "Apollo Operator Pack" },
-      demeterQuickStash: { name: "Demeter Quick Stash" }
+      apolloOperatorPack: { 
+        id: "apolloOperatorPack",
+        name: "Apollo Operator Pack",
+        named: false
+       },
+      demeterQuickStash: { 
+        id: "demeterQuickStash",
+        name: "Demeter Quick Stash",
+        named: false
+       }
     },
     vest: "",
     gloves: "",
     holster: "",
     kneepads: {
       dionysusRoundedPadding: {
-        name: "Dionysus Rounded Padding"
+        id: "dionysusRoundedPadding",
+        name: "Dionysus Rounded Padding",
+        named: false
       }
     }
   },
@@ -181,9 +209,21 @@ var brands = {
     bonuses: [brandBonuses.skillRepair, brandBonuses.skillDuration, brandBonuses.cooldownReduction],
     mask: "",
     backpack: {
-      elementOutdoorsRucksack: { name: "Element Outdoors Rucksack" },
-      mountainHikingPack: { name: "Mountain Hiking Pack" },
-      trekkingElitePack: { name: "Trekking Elite Pack" }
+      elementOutdoorsRucksack: { 
+        id: "elementOutdoorsRucksack",
+        name: "Element Outdoors Rucksack",
+        named: false
+       },
+      mountainHikingPack: { 
+        id: "mountainHikingPack",
+        name: "Mountain Hiking Pack",
+        named: false
+       },
+      trekkingElitePack: { 
+        id: "trekkingElitePack",
+        name: "Trekking Elite Pack",
+        named: false
+       }
     },
     vest: "",
     gloves: "",
@@ -298,9 +338,14 @@ var brands = {
   hardWired: {
     id: "hardWired",
     name: "Hard Wired",
+    mask: "",
     backpack: {
       abbertonDynamoCarrier: { name: "Abberton Dynamo Carrier"}
-    }
+    },
+    vest: "",
+    gloves: "",
+    holster: "",
+    kneepads: ""
   },
   hanaUCorporation: {
     id: "hanaUCorporation",
@@ -330,16 +375,26 @@ var brands = {
   negotiatorsDelimma: {
     id: "negotiatorsDelimma",
     name: "Negotiator's Delimma",
+    mask: "",
     backpack: {
       nibbleBackpack: {name: "Nibble Backpack"}
-    }
+    },
+    vest: "",
+    gloves: "",
+    holster: "",
+    kneepads: ""
   },
   ongoingDirective: {
     id: "ongoingDirective",
     name: "Ongoing Directive",
+    mask: "",
     backpack: {
       loadoutFrame: {name: "Loadout Frame"}
-    }
+    },
+    vest: "",
+    gloves: "",
+    holster: "",
+    kneepads: ""
   },
   overlordArmaments: {
     id: "overlordArmaments",
